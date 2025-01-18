@@ -13,7 +13,7 @@ node ('MAVEN') {
         stage ('SonarQube analysis') {
                 // performing sonarqube analysis 
 		withSonarQubeEnv('SONAR') {
-		sh 'mvn clean verify admin:admin -Dsonar.login=$sqa_df332b7b17b1c500bb4ae5b79c8829c8e1c9956a'
+		sh 'mvn clean verify sonar:sonar -Dsonar.login=$sqa_df332b7b17b1c500bb4ae5b79c8829c8e1c9956a'
 	   }
         }
 
