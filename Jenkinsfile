@@ -2,7 +2,7 @@ node ('MAVEN') {
 
 	stage ('SCM') {
 		// git clone
-		git branch: 'main', url: 'https://github.com/kumar212/spring-petclinic.git'
+		git branch: 'main', url: 'https://github.com/kumar212/git.git'
 	}
 	
 	stage ('build') {
