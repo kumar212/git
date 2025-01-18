@@ -27,4 +27,5 @@ node ('MAVEN') {
 		archiveArtifacts artifacts: 'target/*.jar'
 	}
 
-}	
+}
+    
